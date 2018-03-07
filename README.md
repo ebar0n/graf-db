@@ -2,7 +2,7 @@
 
 ## Summary
 
-Pre-configured Grafana sqllite config database, designed to be used in the Prometheus community catalog entry for Rancher. 
+Pre-configured Grafana sqllite config database, designed to be used in the Prometheus community catalog entry for Rancher.
 This container is designed to be used as a data container, and be accessed through `volumes_from` from a Grafana 3.0.1 or above instance.
 
 Dashboards are present in the DB, exports of those dashboards have also been included in this Repo.
@@ -15,3 +15,11 @@ Additional information can be found on the [guide](https://github.com/infinitywo
 
 ## Metadata
 [![](https://images.microbadger.com/badges/image/infinityworks/graf-db.svg)](http://microbadger.com/images/infinityworks/graf-db "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/infinityworks/graf-db.svg)](http://microbadger.com/images/infinityworks/graf-db "Get your own version badge on microbadger.com")
+
+## Suport S3
+
+```
+bucket_url = ${S3_URL}
+access_key = ${S3_KEY}
+secret_key = ${S3_SECRET}
+```
